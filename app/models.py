@@ -49,12 +49,13 @@ class Product(db.Model):
     price = db.Column(db.Integer, nullable=False)
     img_url = db.Column(db.String)
     user_id = db.relationship(db.Integer, db.ForeignKey('user.id'), lazy = True )
+    info = db.Column(db.String)
 
-
-    def __init__(self, name, price, img_url):
+    def __init__(self, name, price, img_url, info):
         self.name = name
         self.price = price 
         self.img_url = img_url
+        self.info = info
         
         
     def saveToDB(self):
