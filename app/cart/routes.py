@@ -1,8 +1,7 @@
-from itertools import product
 from flask import Blueprint, render_template, redirect, url_for, flash
 from flask_login import current_user, login_required
 from app.models import Cart, Product, User, db
-from app.routes import homePage
+
 
 cart = Blueprint('cart', __name__, template_folder='cart_templates')
 
