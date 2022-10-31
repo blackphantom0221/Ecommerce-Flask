@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\kamar\Documents\Coding Temple\Ecommerce\Ecom_env"
+VIRTUAL_ENV="C:\Users\thebo\Ecommerce-Flask\Ecom_env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
