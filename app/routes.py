@@ -16,10 +16,10 @@ def products():
     product = Product.query.all()
     return render_template('viewProducts.html', product = product )
 
-@app.route('/products/<int: product_id>')
-def singleProduct(product_id):
-    product = Product.query.get(product_id)
-    if product:
-        return render_template('single_Product.html', product = product)
-    else:
-        return redirect(url_for('products'))
+# @app.route('/products/<int: product_id>')
+# def singleProduct(product_id):
+#     product = Product.query.get(product_id)
+#     if product:
+#         return render_template('single_Product.html', product = product)
+#     else:
+#         return redirect(url_for('products'))

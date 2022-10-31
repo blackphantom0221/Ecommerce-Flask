@@ -7,6 +7,10 @@
     display: block;
 }
 
+.home1 {
+    color: black;
+}
+
 .image1 {
     position: absolute;
     top: 0;
@@ -19,10 +23,9 @@
     background-color: skyblue; 
 }
 
-.home1 {
-    color: black;
-}
+
 
 body{
     background-color: skyblue;
 }
+
