@@ -4,7 +4,7 @@ from .models import User, db
 from config import Config
 from flask_migrate import Migrate
 
-from .auth.routes import auth
+# from .auth.routes import auth
 app = Flask(__name__)
 login = LoginManager()
 
@@ -16,7 +16,7 @@ app.config.from_object(Config)
 
 
 #register Blueprint
-app.register_blueprint(auth)
+# app.register_blueprint(auth)
 
 # initialize our database to work with app
 db.init_app(app)
